@@ -1,0 +1,17 @@
+site_name: BotAssembly
+site_description: BotAssembly organization site
+site_url: https://botassembly.org
+repo_url: https://github.com/botassembly/botassembly.github.io
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.instant
+    - content.code.copy
+nav:
+  - Home: index.md
+  - Projects:
+      - LoopBot: https://botassembly.org/loopbot/
+      - BotAssembly: https://botassembly.org/botassembly/
+plugins:
+  - search
