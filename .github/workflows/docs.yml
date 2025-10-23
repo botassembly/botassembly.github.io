@@ -10,7 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v4
-      - run: uv run mkdocs build --strict
+      # Use uvx to fetch mkdocs + material theme ephemerally for the build
+      - run: uvx --with mkdocs-material mkdocs build --strict
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
